@@ -1,0 +1,209 @@
+@media (min-width: 319px) and (max-width: 1000px) {
+  #header {
+    height: 59.7rem;
+  }
+
+  #header-image {
+    margin-top: 9rem;
+  }
+
+  #title {
+    margin-top: 9.5rem;
+  }
+
+  .portfolio-container {
+    flex-direction: column;
+  }
+
+  #contact {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    margin-left: 3.5rem;
+
+  }
+
+  #vector-image{
+    display: none;
+  }
+}
+
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Source Serif 4", serif;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  color: #18795b;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+hr {
+  border: none;
+  border-top: 25px dotted #dae0d9;
+  width: 7%;
+}
+
+/* Nav bar */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #dae0d9;
+  padding: 20px 15px;
+  margin: 0;
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0 12px;
+}
+
+.nav-links li a {
+  position: relative;
+  color: #18795b;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.nav-links li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #18795b;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.nav-links li a:hover:before {
+  width: 100%;
+}
+
+.nav-links li.center a:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links li.upward a:before {
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+
+.nav-links li.upward a:hover:before {
+  bottom: 0;
+  opacity: 1;
+}
+
+.nav-links li.forward a:before {
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.nav-links li.forward a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Header */
+.header-container {
+  background-color: #dae0d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
+}
+
+.header-h1 {
+  color: #18795b;
+  font-family: "Sacramento", cursive;
+  font-size: 7.5rem;
+  margin: 220px 0 0 0;
+}
+
+.header-image {
+  padding-top: 31px;
+}
+
+/* About */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 150px 0;
+}
+
+.about-image {
+  margin-bottom: 50px;
+}
+
+/* Portfolio */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 2rem 150px 2rem;
+  gap: 40px;
+}
+
+.box {
+  flex: 1;
+  height: 350px;
+  width: 250px;
+  padding: 60px 15px 15px 15px;
+  border: 1px solid #18795b;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.portfolio-h2 {
+  font-size: 45px;
+  margin-top: 150px;
+}
+
+/* Contact me */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25rem;
+  gap: 50px;
+  padding: 0;
+}
+
+.contact-h2 {
+  font-size: 45px;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+
+.vector-image {
+  padding: 0;
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #dae0d9;
+}
